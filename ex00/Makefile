@@ -2,8 +2,7 @@ NAME = templates
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = main.cpp
-HFILES = MutantStack.hpp
-
+HFILES = easyfind.hpp
 
 OBJ = $(FILES:.cpp=.o)
 
