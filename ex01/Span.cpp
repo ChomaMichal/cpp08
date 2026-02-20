@@ -17,7 +17,12 @@ Span::Span(const unsigned int amount) {
   this->len = 0;
 }
 
-Span::Span(const Span &other) { *this = other; }
+Span::Span(const Span &other) {
+  this->arr = NULL;
+  this->buffer = 0;
+  this->len = 0;
+  *this = other;
+}
 
 Span::~Span() { delete[] arr; }
 
